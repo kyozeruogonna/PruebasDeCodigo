@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nuevo Juego</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="./CSS/gamestyles.css">
+</head>
+<body>
+
+	<section class="panoramas">
+
+			<div class="ola ola1"></div>
+			<div class="ola ola2"></div>
+			<div class="ola ola3"></div>
+			<div class="ola ola4"></div>
+
+	</section>
+
+	<p class="titulo" style="font-size: 36px; font-family: 'Londrina Solid', cursive; color: white;">¿Puedes adivinar cuál número entre el 1 y 100 estoy pensando?</p>
+
+
+	<div class = "block">
+
+		<div class = "form">
+			<label for = "intentoCampo" >Ingresa un número: </label>
+			<input type="text" id="intentoCampo" class = "intentoCamp">
+			<input type = "submit" value = "Adivinar" class = "intentoEnviado">
+		</div>
+
+		<div class = "resultParas">
+			<p class = "intentos" style="display:none;"></p>
+			<p class = "ultimoResultado" style="display:none;"></p>
+			<p class = "menorOMayor" style="display:none;"></p>
+		</div>
+
+		<input type = "submit" value = "Comenzar otra partida" class = "reiniciar" style="display:none;">
+
+
+
+	</div>
+
+
+<input type = "submit" value = "Volver" class = "volver">
+
+
+<script type="text/javascript" src="./Js/main.js"></script>
+
+</body>
+</html>
