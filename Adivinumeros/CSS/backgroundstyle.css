@@ -1,0 +1,224 @@
+* {
+
+	margin: 0;
+	padding: 0;
+}
+
+
+#panorama{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: #3586ff;
+	overflow: hidden;
+}
+
+section .ola{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-image: url(./wave.png);
+	background-size: 1000px 100px;
+}
+
+
+section	.ola.ola1 {
+	animation: animar 30s linear infinite;
+	z-index: 1000;
+	opacity: 1;
+	animation-delay: 0s;
+	bottom: 0;
+}
+@keyframes animar {
+
+	0% {
+		background-position-x: 0;
+	}
+
+	100% {
+		background-position-x: 1000px;
+	}
+}
+
+section	.ola.ola2 {
+	animation: animar2 15s linear infinite;
+	z-index: 999;
+	opacity: 0.5;
+	animation-delay: -5s;
+	bottom: 10px;
+}
+@keyframes animar2 {
+
+	0% {
+		background-position-x: 0;
+	}
+
+	100% {
+		background-position-x: -1000px;
+	}
+}
+
+section	.ola.ola3 {
+	animation: animar3 15s linear infinite;
+	z-index: 998;
+	opacity: 0.2;
+	animation-delay: -2s;
+	bottom: 15px;
+}
+
+@keyframes animar3 {
+
+	0% {
+		background-position-x: 0;
+	}
+
+	100% {
+		background-position-x: 1000px;
+	}
+}
+
+section	.ola.ola4 {
+	animation: animar4 5s linear infinite;
+	z-index: 997;
+	opacity: 0.7;
+	animation-delay: -2s;
+	bottom: 15px;
+}
+@keyframes animar4 {
+
+	0% {
+		background-position-x: 0;
+	}
+
+	100% {
+		background-position-x: -1000px;
+	}
+}
+
+.nube {
+	position: absolute;
+	top: 10%;
+	left: 0px;
+	background: white;
+	width: 100px;
+	height: 50px;
+	border-radius: 100px;
+	animation: mov 5s linear infinite;
+}
+
+@keyframes mov {
+
+	0% {
+		left: 0;
+		transform: translateX(-100%);
+	}
+
+	100% {
+		left: 100%;
+		transform: translateX(0%);
+	}
+}
+
+.nube::before {
+	content: "";
+	position: absolute;
+	top: -80%;
+	left: 10%;
+	width: 50%;
+	height: 150%;
+	background: white;
+	border-radius: 50%; 
+}
+
+.nube::after {
+	content: "";
+	position: absolute;
+	top: -40%;
+	right: 20%;
+	width: 30%;
+	height: 100%;
+	background: white;
+	border-radius: 50%; 
+}
+
+.nube.nube1 {
+
+	top: 50%;
+	left: 20%;
+	width: 80px;
+	height: 40px;
+	animation: mov 8s linear infinite;
+}
+
+.nube.nube2 {
+	
+	top: 30%;
+	left: 20%;
+	width: 80px;
+	height: 30px;
+	animation: mov 10s linear infinite;
+}
+
+.nube.nube2::after {
+	content: "";
+	position: absolute;
+	top: -80%;
+	right: 10%;
+	width: 50%;
+	height: 150%;
+	background: white;
+	border-radius: 50%; 
+}
+
+.nube.nube2::before {
+	content: "";
+	position: absolute;
+	top: -40%;
+	left: 20%;
+	width: 30%;
+	height: 100%;
+	background: white;
+	border-radius: 50%; 
+}
+
+.nube.nube3 {
+	
+	top: 60%;
+	left: 60%;
+	width: 40px;
+	height: 10px;
+	animation: mov 16s linear infinite;
+}
+
+.nube.nube3::after {
+	content: "";
+	position: absolute;
+	top: -80%;
+	right: 10%;
+	width: 50%;
+	height: 150%;
+	background: white;
+	border-radius: 50%; 
+}
+
+.nube.nube3::before {
+	content: "";
+	position: absolute;
+	top: -40%;
+	left: 20%;
+	width: 30%;
+	height: 100%;
+	background: white;
+	border-radius: 50%; 
+}
+
+.nube.nube4 {
+	
+	top: 20%;
+	left: 15%;
+	width: 55px;
+	height: 18px;
+	animation: mov 13s linear infinite;
+}
