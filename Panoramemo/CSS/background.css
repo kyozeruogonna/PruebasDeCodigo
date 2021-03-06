@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(./montana1.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	overflow: hidden;
+}
+
+.nav ul {
+	z-index: 1;
+	position: absolute;
+	list-style: none;
+	transform: translate(105%,0%);
+}
+
+.nav ul li {
+	display: inline-block;
+	margin: 20px;
+}
+.nav ul li a{
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: bold;
+	color: black;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+#titulo {
+	position: absolute;
+	font-size: 124px;
+	color: #ffffff;
+	font-family: 'Fira Sans', sans-serif;
+	z-index: 1;
+
+	-moz-user-select: none; 
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.banner .nubes {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.banner .nubes .top {
+	position: absolute;
+	top: 0;
+	max-width: 100%;
+	animation: acercar calc(3s * var(--i)) linear infinite;
+}
+
+@keyframes acercar {
+
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+
+	25%,75% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1.5);
+	}
+}
+
+.banner .nubes .bot {
+	position: absolute;
+	bottom: 0;
+	max-width: 100%;
+	animation: mov calc(60s * var(--i)) linear infinite;
+}
+
+@keyframes mov {
+	
+	0% {
+		opacity: 0;	
+	}
+
+	50% {
+		opacity: 1;	
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

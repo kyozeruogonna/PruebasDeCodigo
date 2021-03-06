@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Panoramemo</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./CSS/gamestyle.css">
+	</head>
+
+	<body>
+
+		<div class="nav">
+			<ul>
+				<li class="index"><a href="index.html">Página principal</a></li>
+				<li class="howto"><a href="#">Cómo se juega</a></li>
+			</ul>
+		</div>
+
+		<div class="fondo">
+			<input type="submit" value="Iniciar Juego" class="elegir" style="cursor: pointer;">
+			<h2 class="secDif" style="user-select: none; display: none;">Selecciona la dificultad</h2>
+
+			<input type="submit" value="Fácil" class="facil" id="dif" style="cursor: pointer; display: none;">
+			<input type="submit" value="Intermedio" class="medio" id="dif" style="cursor: pointer; display: none;">
+			<input type="submit" value="Difícil" class="dificil" id="dif" style="cursor: pointer; display: none;">
+
+			<p class="error" style="display: none;"></p>
+			<p class="victoriaoderrota"></p>
+			<p class="tiempo"></p>
+
+			<div class="tabla"></div>
+		</div>
+
+		<script type="text/javascript" src="./Js/main.js"></script>
+		
+	</body>
+</html>
